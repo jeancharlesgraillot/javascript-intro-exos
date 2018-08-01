@@ -119,3 +119,143 @@ console.log("Soit combiné : " + prenomFirstLetter + prenomLastLetter + nomFirst
 var age = Number(prompt("Entrez votre âge: "));
 var ageDivise = age/33;
 console.log(Math.round(ageDivise));*/
+
+
+/*************************************Intermédiaire part1**********************/
+
+//Exo 1//
+
+/*var chiffre1 = 5;
+var chiffre2 = 8;
+var chiffre3 = 4;
+var chiffre4 = 6;
+
+console.log(Math.max(chiffre1, chiffre2, chiffre3, chiffre4));*/
+
+//Exo 2//
+
+
+/*var age = Number(prompt("Entrez votre âge :"));
+
+while (age < 0) {
+  age = Number(prompt("Entrez votre âge réel :"));
+}
+if (age < 21) {
+  console.log("Accès verrouillé");
+}
+if (age >= 21) {
+  console.log("Accès déverouillé");
+}
+if (age % 2 === 0) {
+  console.log("Votre âge est pair");
+}
+if (Number.isInteger(Math.sqrt(age))) {
+  console.log("Votre âge est un nombre carré");
+}*/
+
+
+//Exo 3//
+
+/*var hiddenNumber = 47;
+
+var findingNumber = Number(prompt("Devinez le nombre caché :"));
+
+while (findingNumber !== hiddenNumber) {
+  if (findingNumber < hiddenNumber) {
+    console.log("Votre nombre est trop petit");
+    findingNumber = Number(prompt("Devinez le nombre caché :"));
+  }
+  else (findingNumber > hiddenNumber) {
+    console.log("Votre nombre est trop grand");
+    findingNumber = Number(prompt("Devinez le nombre caché :"));
+  }
+}
+
+if (findingNumber === hiddenNumber) {
+  console.log("Vous avez deviné le nombre caché !");
+}*/
+
+
+//Exo 4//
+
+/*var i = 1;
+
+while (i <= 100) {
+  console.log(i);
+  i++;
+}*/
+
+
+//Exo 5//
+
+/*var i = 1;
+
+while (i <= 100) {
+  i++;
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}*/
+
+
+//Exo 6//
+
+/*var longeur = Number(prompt("Entrez une longeur :"));
+var largeur = Number(prompt("Entrez une largeur :"));
+var profondeur = Number(prompt("Entrez une profondeur :"));
+var debit = Number(prompt("Entrez un débit :"));
+
+function tempsRemplissage(longeur, largeur, profondeur, debit) {
+    var volumePiscine = longeur*largeur*profondeur;
+    var tempsMinutes = volumePiscine/debit;
+    console.log("Le temps de remplissage sera de " + tempsMinutes + " minutes.");
+}
+
+tempsRemplissage(longeur, largeur, profondeur, debit);*/
+
+
+//Exo 7//
+
+/*var rayon = Number(prompt("Entrez le rayon du cercle :"));
+
+function aireCercle(rayon) {
+  var aire = Math.PI*rayon*rayon;
+  console.log("L'aire du cercle est de " + aire + " mètres carré.");
+}
+
+aireCercle(rayon);
+
+function perimetreCercle(rayon) {
+  var perimetre = 2*Math.PI*rayon;
+  console.log("Le périmètre du cercle est de " + perimetre + " mètres.");
+}
+
+perimetreCercle(rayon);*/
+
+
+//Exo 8//
+
+/*var ligne = "";
+for (var i = 0; i <5; i++) {
+    ligne += "*";
+    console.log(ligne);
+}*/
+
+
+//Exo 9//
+
+
+/*for (var i = 1; i < 100; i++) {
+  if ((i % 3 === 0) && (i % 5 === 0)) {
+    console.log("FIZZBUZZ");
+  }
+  else if (i % 3 === 0) {
+    console.log("FIZZ");
+  }
+  else if (i % 5 === 0) {
+    console.log("BUZZ");
+  }
+  else {
+    console.log(i);
+  }
+}*/

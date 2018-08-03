@@ -235,11 +235,11 @@ perimetreCercle(rayon);*/
 
 //Exo 8//
 
-/*var ligne = "";
-for (var i = 0; i <5; i++) {
-    ligne += "*";
-    console.log(ligne);
-}*/
+// var ligne = "";
+// for (i = 0; i < 5; i++) {
+//     ligne += "*";
+//     console.log(ligne);
+// }
 
 
 //Exo 9//
@@ -259,3 +259,144 @@ for (var i = 0; i <5; i++) {
     console.log(i);
   }
 }*/
+
+
+/*************************************Intermédiaire part2**********************/
+
+//Exo 1//
+
+// var ligne = "";
+//
+//
+// for (var i = 0; i < 8; i++) {
+//   ligne += "\n";
+//   for (var j = 0; j < 16; j++) {
+//     if (ligne.length % 2 === 0) {
+//       ligne += "#";
+//     }
+//     else {
+//       ligne += " ";
+//     }
+//   }
+// }
+//
+// console.log(ligne);
+
+
+//Exo 2//
+
+
+/*for (var i = 0; i < 4; i++) {
+  for (var y = 0; y < 4; y++) {
+    if (i === y) {
+      console.log(1);
+    }
+    else {
+      console.log(0);
+    }
+
+  }
+  console.log('"-----"');
+}*/
+
+
+//Exo 3//
+
+
+// var montantPanier = Math.round(Number(prompt("Entrez le total de vos achats :")));
+//
+// function parite(montantPanier) {
+//   if (montantPanier % 2 === 0) {
+//     console.log("true");
+//   }
+//   else {
+//     console.log("false");
+//   }
+// }
+// parite(montantPanier);
+
+
+//Exo 4//
+
+
+// var nb = Number(prompt("Entrez un nombre :"));
+//
+// function facto(nb) {
+//   while (Number.isInteger(nb) === false) {
+//     console.log("Erreur, veuillez saisir un entier positif !");
+//     nb = Number(prompt("Entrez un nombre :"));
+//   }
+//
+//   var multiple = 1;
+//   for (var i = 1; i < nb; i++) {
+//   multiple += multiple*i;
+//   }
+//
+//   console.log(multiple);
+// }
+//
+// facto(nb);
+
+
+//Exo 5//
+
+
+// var facture = prompt("Taper votre facture avec des tirets : ");
+//
+// function correction(facture) {
+//
+//   for (var i = 0; i < facture.length; i++) {
+//     if (isNaN(facture)) {
+//       facture = facture.replace("-" , "_");
+//     }
+//     else {
+//       console.log("Veuillez tapez du texte :");
+//       facture = prompt("Taper votre facture avec des tirets : ");
+//     }
+//   }
+//   console.log(facture);
+// }
+//
+// correction(facture);
+
+
+//Exo 6//
+
+/*var listeCourses = ["baguette", "lait", "soda", "fromage", "yahourt"];
+
+console.log(listeCourses[0]);
+console.log(listeCourses[4]);
+console.log(listeCourses[2]);*/
+
+
+//Exo 7//
+
+// var humanInfos = ["JC", "Graillot", "36 ans", "28/09/1981" ];
+
+// humanInfos = ["JC", "Graillot", "36", "28/09/1981" ];
+//
+//
+// function afficherInfos(humanInfos) {
+//   for (var i = 0; i < humanInfos.length; i++) {
+//
+//       console.log(humanInfos[i]);
+//   }
+// }
+//
+// afficherInfos(humanInfos);
+
+// humanInfos = [
+//  ["JC", "Graillot", "36", "28/09/1981" ],
+//  ["Jessy", "Fouace", "19", "07/10/1998"],
+//  ["Marie-Do", "Graillot", "33", "23/10/1984"]
+// ];
+//
+// function afficherInfos(humanInfos) {
+//   for (var i = 0; i < humanInfos.length; i++) {
+//     for (var y = 0; y < humanInfos[i].length; y++) {
+//       console.log(humanInfos[i][y]);
+//     }
+//   }
+// }
+//
+// afficherInfos(humanInfos);

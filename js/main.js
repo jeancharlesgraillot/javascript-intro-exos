@@ -249,7 +249,7 @@ perimetreCercle(rayon);*/
   if ((i % 3 === 0) && (i % 5 === 0)) {
     console.log("FIZZBUZZ");
   }
-  else if (i % 3 === 0) {
+  if (i % 3 === 0) {
     console.log("FIZZ");
   }
   else if (i % 5 === 0) {
@@ -400,3 +400,139 @@ console.log(listeCourses[2]);*/
 // }
 //
 // afficherInfos(humanInfos);
+
+
+//Exo 8//
+
+
+// var listeNombres = [1, 2, 3, 4, 5];
+//
+// console.log(Math.max(...listeNombres));
+
+// var listeNombreStrings = [1, "chaine 1", 2, "chaine 1 2", 3, "chaine 1 2 3", 4, "chaine 1 2 3 4", 5, "chaine 1 2 3 4 5"];
+// var maxCharString = listeNombreStrings[9].length;
+//
+//
+// for (var i = 0; i < listeNombreStrings.length; i++) {
+//   if (isNaN(listeNombreStrings[i]).length > maxCharString) {
+//     maxCharString = isNaN(listeNombreStrings[i]);
+//   }
+// }
+//
+// console.log(maxCharString);
+
+
+//Exo 9//
+
+// var tableau = [];
+// var taches;
+//
+// while (taches !== "fin") {
+//   taches = prompt("Entrez une tâche à réaliser :");
+//   tableau.push(taches);
+// }
+// if (taches === "fin") {
+//   for (var i = 0; i < tableau.length - 1; i++) {
+//     console.log(tableau[i]);
+//   }
+// }
+
+
+//Exo 10//
+
+
+var nbPointsJoueur = 0;
+var nbPointsOrdi = 0;
+
+while ((nbPointsOrdi < 3) && (nbPointsJoueur < 3)) {
+
+  var tableauOrdi = ["Pierre", "Papier", "Ciseaux"];
+  var choixOrdi = tableauOrdi[Math.floor(Math.random()*tableauOrdi.length)];
+  choixOrdi = choixOrdi.toUpperCase();
+  var choixJoueur = prompt("Choisissez entre Pierre, Papier ou Ciseaux : ");
+  choixJoueur = choixJoueur.toUpperCase();
+
+  // if ((choixJoueur !== "PIERRE") || (choixJoueur !== "PAPIER") || (choixJoueur !== "CISEAUX")) {
+  //   choixJoueur = prompt("Choisissez entre Pierre, Papier ou Ciseaux : ");
+  // }else {
+  //
+  // }
+
+
+  if ((choixJoueur === "PIERRE") && (choixOrdi === "PIERRE")) {
+    console.log("Vous jouez Pierre et l'ordinateur joue Pierre");
+    console.log("Egalité !");
+  }
+  if ((choixJoueur === "PIERRE") && (choixOrdi === "PAPIER")) {
+    console.log("Vous jouez Pierre et l'ordinateur joue Papier");
+    console.log("L'ordinateur gagne !");
+    nbPointsOrdi++;
+    console.log("L'ordinateur a " + nbPointsOrdi + " point(s) !");
+  }
+  if ((choixJoueur === "PIERRE") && (choixOrdi === "CISEAUX")) {
+    console.log("Vous jouez Pierre et l'ordinateur joue Ciseaux");
+    console.log("Joueur gagne !");
+    nbPointsJoueur++;
+    console.log("Vous avez " + nbPointsJoueur + " point(s) !");
+  }
+  if ((choixJoueur === "PAPIER") && (choixOrdi === "PAPIER")) {
+    console.log("Vous jouez Papier et l'ordinateur joue Papier");
+    console.log("Egalité !");
+  }
+  if ((choixJoueur === "PAPIER") && (choixOrdi === "CISEAUX")) {
+    console.log("Vous jouez Papier et l'ordinateur joue Ciseaux");
+    console.log("L'ordinateur gagne !");
+    nbPointsOrdi++;
+    console.log("L'ordinateur a " + nbPointsOrdi + " point(s) !");
+  }
+  if ((choixJoueur === "PAPIER") && (choixOrdi === "PIERRE")) {
+    console.log("Vous jouez Papier et l'ordinateur joue Pierre");
+    console.log("Joueur gagne !");
+    nbPointsJoueur++;
+    console.log("Vous avez " + nbPointsJoueur + " point(s) !");
+  }
+  if ((choixJoueur === "CISEAUX") && (choixOrdi === "CISEAUX")) {
+    console.log("Vous jouez Ciseaux et l'ordinateur joue Ciseaux");
+    console.log("Egalité !");
+  }
+  if ((choixJoueur === "CISEAUX") && (choixOrdi === "PIERRE")) {
+    console.log("Vous jouez Ciseaux et l'ordinateur joue Pierre");
+    console.log("L'ordinateur gagne !");
+    nbPointsOrdi++;
+    console.log("L'ordinateur a " + nbPointsOrdi + " point(s) !");
+  }
+  if ((choixJoueur === "CISEAUX") && (choixOrdi === "PAPIER")) {
+    console.log("Vous jouez Ciseaux et l'ordinateur joue Papier");
+    console.log("Joueur gagne !");
+    nbPointsJoueur++;
+    console.log("Vous avez " + nbPointsJoueur + " point(s) !");
+  }
+}
+
+if (nbPointsOrdi === 3) {
+  console.log("Vous avez perdu la partie !");
+}
+if (nbPointsJoueur === 3) {
+  console.log("Vous avez gagné la partie !");
+}
+
+
+//Exo 11//
+
+// var str = prompt("Entrez une phrase :");
+// var letter = prompt("Entrez une lettre à comptabiliser :");
+// str.toLowerCase();
+// letter.toLowerCase();
+//
+// function compterNbLettres(str, letter) {
+//   var nbLettres = 0;
+//   for (var i = 0; i < str.length; i++) {
+//     var lettre = str[i];
+//     if (lettre === letter) {
+//       nbLettres++;
+//     }
+//   }
+//   console.log("La string " + str + " contient " + nbLettres + " lettre(s) " + letter + ".");
+// }
+//
+// compterNbLettres(str, letter);

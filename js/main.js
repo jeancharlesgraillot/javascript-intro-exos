@@ -441,80 +441,77 @@ console.log(listeCourses[2]);*/
 //Exo 10//
 
 
-var nbPointsJoueur = 0;
-var nbPointsOrdi = 0;
+// var nbPointsJoueur = 0;
+// var nbPointsOrdi = 0;
+//
+// while ((nbPointsOrdi < 3) && (nbPointsJoueur < 3)) {
+//
+//   var tableauOrdi = ["PIERRE", "PAPIER", "CISEAUX"];
+//   var choixOrdi = tableauOrdi[Math.floor(Math.random()*tableauOrdi.length)];
+//   var choixJoueur = prompt("Choisissez entrer Pierre, Papier ou Ciseaux : ").toUpperCase();
+//
+//
+//   while ((choixJoueur !== "PIERRE") && (choixJoueur !== "PAPIER") && (choixJoueur !== "CISEAUX")) {
+//     choixJoueur = prompt("ERREUR, veuillez choisir entre Pierre, Papier ou Ciseaux : ").toUpperCase();
+//   }
+//
+//   if ((choixJoueur === "PIERRE") && (choixOrdi === "PIERRE")) {
+//     console.log("Vous jouez Pierre et l'ordinateur joue Pierre");
+//     console.log("Egalité !");
+//   }
+//   if ((choixJoueur === "PIERRE") && (choixOrdi === "PAPIER")) {
+//     console.log("Vous jouez Pierre et l'ordinateur joue Papier");
+//     console.log("L'ordinateur gagne !");
+//     nbPointsOrdi++;
+//     console.log("L'ordinateur a " + nbPointsOrdi + " point(s) !");
+//   }
+//   if ((choixJoueur === "PIERRE") && (choixOrdi === "CISEAUX")) {
+//     console.log("Vous jouez Pierre et l'ordinateur joue Ciseaux");
+//     console.log("Joueur gagne !");
+//     nbPointsJoueur++;
+//     console.log("Vous avez " + nbPointsJoueur + " point(s) !");
+//   }
+//   if ((choixJoueur === "PAPIER") && (choixOrdi === "PAPIER")) {
+//     console.log("Vous jouez Papier et l'ordinateur joue Papier");
+//     console.log("Egalité !");
+//   }
+//   if ((choixJoueur === "PAPIER") && (choixOrdi === "CISEAUX")) {
+//     console.log("Vous jouez Papier et l'ordinateur joue Ciseaux");
+//     console.log("L'ordinateur gagne !");
+//     nbPointsOrdi++;
+//     console.log("L'ordinateur a " + nbPointsOrdi + " point(s) !");
+//   }
+//   if ((choixJoueur === "PAPIER") && (choixOrdi === "PIERRE")) {
+//     console.log("Vous jouez Papier et l'ordinateur joue Pierre");
+//     console.log("Joueur gagne !");
+//     nbPointsJoueur++;
+//     console.log("Vous avez " + nbPointsJoueur + " point(s) !");
+//   }
+//   if ((choixJoueur === "CISEAUX") && (choixOrdi === "CISEAUX")) {
+//     console.log("Vous jouez Ciseaux et l'ordinateur joue Ciseaux");
+//     console.log("Egalité !");
+//   }
+//   if ((choixJoueur === "CISEAUX") && (choixOrdi === "PIERRE")) {
+//     console.log("Vous jouez Ciseaux et l'ordinateur joue Pierre");
+//     console.log("L'ordinateur gagne !");
+//     nbPointsOrdi++;
+//     console.log("L'ordinateur a " + nbPointsOrdi + " point(s) !");
+//   }
+//   if ((choixJoueur === "CISEAUX") && (choixOrdi === "PAPIER")) {
+//     console.log("Vous jouez Ciseaux et l'ordinateur joue Papier");
+//     console.log("Joueur gagne !");
+//     nbPointsJoueur++;
+//     console.log("Vous avez " + nbPointsJoueur + " point(s) !");
+//   }
+// }
+//
+// if (nbPointsOrdi === 3) {
+//   console.log("Vous avez perdu la partie !");
+// }
+// if (nbPointsJoueur === 3) {
+//   console.log("Vous avez gagné la partie !");
+// }
 
-while ((nbPointsOrdi < 3) && (nbPointsJoueur < 3)) {
-
-  var tableauOrdi = ["Pierre", "Papier", "Ciseaux"];
-  var choixOrdi = tableauOrdi[Math.floor(Math.random()*tableauOrdi.length)];
-  choixOrdi = choixOrdi.toUpperCase();
-  var choixJoueur = prompt("Choisissez entre Pierre, Papier ou Ciseaux : ");
-  choixJoueur = choixJoueur.toUpperCase();
-
-  // if ((choixJoueur !== "PIERRE") || (choixJoueur !== "PAPIER") || (choixJoueur !== "CISEAUX")) {
-  //   choixJoueur = prompt("Choisissez entre Pierre, Papier ou Ciseaux : ");
-  // }else {
-  //
-  // }
-
-
-  if ((choixJoueur === "PIERRE") && (choixOrdi === "PIERRE")) {
-    console.log("Vous jouez Pierre et l'ordinateur joue Pierre");
-    console.log("Egalité !");
-  }
-  if ((choixJoueur === "PIERRE") && (choixOrdi === "PAPIER")) {
-    console.log("Vous jouez Pierre et l'ordinateur joue Papier");
-    console.log("L'ordinateur gagne !");
-    nbPointsOrdi++;
-    console.log("L'ordinateur a " + nbPointsOrdi + " point(s) !");
-  }
-  if ((choixJoueur === "PIERRE") && (choixOrdi === "CISEAUX")) {
-    console.log("Vous jouez Pierre et l'ordinateur joue Ciseaux");
-    console.log("Joueur gagne !");
-    nbPointsJoueur++;
-    console.log("Vous avez " + nbPointsJoueur + " point(s) !");
-  }
-  if ((choixJoueur === "PAPIER") && (choixOrdi === "PAPIER")) {
-    console.log("Vous jouez Papier et l'ordinateur joue Papier");
-    console.log("Egalité !");
-  }
-  if ((choixJoueur === "PAPIER") && (choixOrdi === "CISEAUX")) {
-    console.log("Vous jouez Papier et l'ordinateur joue Ciseaux");
-    console.log("L'ordinateur gagne !");
-    nbPointsOrdi++;
-    console.log("L'ordinateur a " + nbPointsOrdi + " point(s) !");
-  }
-  if ((choixJoueur === "PAPIER") && (choixOrdi === "PIERRE")) {
-    console.log("Vous jouez Papier et l'ordinateur joue Pierre");
-    console.log("Joueur gagne !");
-    nbPointsJoueur++;
-    console.log("Vous avez " + nbPointsJoueur + " point(s) !");
-  }
-  if ((choixJoueur === "CISEAUX") && (choixOrdi === "CISEAUX")) {
-    console.log("Vous jouez Ciseaux et l'ordinateur joue Ciseaux");
-    console.log("Egalité !");
-  }
-  if ((choixJoueur === "CISEAUX") && (choixOrdi === "PIERRE")) {
-    console.log("Vous jouez Ciseaux et l'ordinateur joue Pierre");
-    console.log("L'ordinateur gagne !");
-    nbPointsOrdi++;
-    console.log("L'ordinateur a " + nbPointsOrdi + " point(s) !");
-  }
-  if ((choixJoueur === "CISEAUX") && (choixOrdi === "PAPIER")) {
-    console.log("Vous jouez Ciseaux et l'ordinateur joue Papier");
-    console.log("Joueur gagne !");
-    nbPointsJoueur++;
-    console.log("Vous avez " + nbPointsJoueur + " point(s) !");
-  }
-}
-
-if (nbPointsOrdi === 3) {
-  console.log("Vous avez perdu la partie !");
-}
-if (nbPointsJoueur === 3) {
-  console.log("Vous avez gagné la partie !");
-}
 
 
 //Exo 11//

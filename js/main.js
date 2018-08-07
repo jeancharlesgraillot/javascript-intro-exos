@@ -438,7 +438,7 @@ console.log(listeCourses[2]);*/
 // }
 
 
-//Exo 10//
+//Exo 10 Pierre Papier Ciseaux//
 
 
 var nbPointsJoueur = 0;
@@ -446,18 +446,14 @@ var nbPointsOrdi = 0;
 
 while ((nbPointsOrdi < 3) && (nbPointsJoueur < 3)) {
 
-  var tableauOrdi = ["Pierre", "Papier", "Ciseaux"];
+  var tableauOrdi = ["PIERRE", "PAPIER", "CISEAUX"];
   var choixOrdi = tableauOrdi[Math.floor(Math.random()*tableauOrdi.length)];
-  choixOrdi = choixOrdi.toUpperCase();
-  var choixJoueur = prompt("Choisissez entre Pierre, Papier ou Ciseaux : ");
-  choixJoueur = choixJoueur.toUpperCase();
+  var choixJoueur = prompt("Choisissez entrer Pierre, Papier ou Ciseaux : ").toUpperCase();
 
-  // if ((choixJoueur !== "PIERRE") || (choixJoueur !== "PAPIER") || (choixJoueur !== "CISEAUX")) {
-  //   choixJoueur = prompt("Choisissez entre Pierre, Papier ou Ciseaux : ");
-  // }else {
-  //
-  // }
 
+  while ((choixJoueur !== "PIERRE") && (choixJoueur !== "PAPIER") && (choixJoueur !== "CISEAUX")) {
+    choixJoueur = prompt("ERREUR, veuillez choisir entre Pierre, Papier ou Ciseaux : ").toUpperCase();
+  }
 
   if ((choixJoueur === "PIERRE") && (choixOrdi === "PIERRE")) {
     console.log("Vous jouez Pierre et l'ordinateur joue Pierre");
@@ -517,13 +513,12 @@ if (nbPointsJoueur === 3) {
 }
 
 
+
 //Exo 11//
 
-// var str = prompt("Entrez une phrase :");
-// var letter = prompt("Entrez une lettre à comptabiliser :");
-// str.toLowerCase();
-// letter.toLowerCase();
-//
+// var str = prompt("Entrez une phrase :").toLowerCase();
+// var letter = prompt("Entrez une lettre à comptabiliser :").toLowerCase();
+
 // function compterNbLettres(str, letter) {
 //   var nbLettres = 0;
 //   for (var i = 0; i < str.length; i++) {
